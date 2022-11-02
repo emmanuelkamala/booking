@@ -21,7 +21,7 @@ const Header = () => {
   const [options, setOptions] = useState({
     adult: 1,
     children: 0,
-    room: 0,
+    room: 1,
   })
 
   const handleOptionChange = (name, operation) => {
@@ -112,7 +112,7 @@ const Header = () => {
               <div className="optionItem">
                 <span className="optionText">Room</span>
                 <div className="optionCounter">
-                  <button onClick={() => handleOptionChange("room", "d")} className="optionCounterButton" disabled={options.room <= 0}>-</button>
+                  <button onClick={() => handleOptionChange("room", "d")} className="optionCounterButton" disabled={options.room <= 1}>-</button>
                   <span className="optionCounterNumber">{options.room}</span>
                   <button onClick={() => handleOptionChange("room", "i")} className="optionCounterButton">+</button>
                 </div>
