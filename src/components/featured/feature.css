@@ -1,11 +1,3 @@
-.homeContainer {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-}
-
 .featured {
   width: 100%;
   max-width: 1200px;
